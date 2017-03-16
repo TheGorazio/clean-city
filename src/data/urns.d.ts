@@ -1,4 +1,5 @@
 declare const urns: {
+    id: number;
     fill: number;
     battery: number;
     position: {

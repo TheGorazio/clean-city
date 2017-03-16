@@ -11,4 +11,5 @@ export interface UrnInfoProps {
 }
 export default class UrnInfo extends React.Component<UrnInfoProps, UrnInfoState> {
     render(): JSX.Element;
+    checkState(val: any): string;
 }
