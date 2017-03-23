@@ -3,13 +3,15 @@ import * as React from 'react';
 export interface TimeLineProps {
 }
 export interface TimeLineState {
-    date: string;
-    time: string;
-    timePadding: number;
+    curDate: string;
+    curTime: string;
 }
 export default class TimeLine extends React.Component<TimeLineProps, TimeLineState> {
     constructor();
-    pickerChange(e: any): void;
-    componentDidMount(): void;
+    handleDateChange(event: any): void;
+    handleTimeChange(event: any): void;
+    getCurDate(): string;
+    getCurTime(): number;
     render(): JSX.Element;
+    onPickerChange(): void;
 }
