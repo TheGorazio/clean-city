@@ -1,9 +1,9 @@
 /// <reference types="react" />
 import * as React from 'react';
 export interface AuthProps {
+    authUser: Function;
 }
 export interface AuthState {
-    type: string;
     login: string | null;
     password: string | null;
     submitDisabled: boolean;

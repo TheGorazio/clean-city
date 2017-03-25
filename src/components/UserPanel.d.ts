@@ -1,3 +1,9 @@
 /// <reference types="react" />
-declare const UserPanel: (props: any) => JSX.Element;
+import { User } from '../types/User';
+export interface UserPanelProps {
+    user: User;
+    show: boolean;
+    logOut: Function;
+}
+declare const UserPanel: (props: UserPanelProps) => JSX.Element;
 export default UserPanel;

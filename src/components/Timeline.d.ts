@@ -4,7 +4,7 @@ export interface TimeLineProps {
 }
 export interface TimeLineState {
     curDate: string;
-    curTime: string;
+    curTime: number;
 }
 export default class TimeLine extends React.Component<TimeLineProps, TimeLineState> {
     constructor();
@@ -13,5 +13,4 @@ export default class TimeLine extends React.Component<TimeLineProps, TimeLineSta
     getCurDate(): string;
     getCurTime(): number;
     render(): JSX.Element;
-    onPickerChange(): void;
 }
