@@ -7,7 +7,7 @@ import { MessageType } from '../types/MessageType';
 export interface MainState {
     urns: Array<Urn>;
     selectedUrnId: number;
-    selectedUrn: Urn;
+    selectedUrn?: Urn;
     menuShow: boolean;
     msgBoxShow: boolean;
     messages: Array<MessageType>;
@@ -16,11 +16,13 @@ export interface MainState {
     redirect: boolean;
 }
 export interface MainProps {
-    urns: Array<Object>;
+    urns: Array<Urn>;
     user: User;
+    pathToUrn?: number;
 }
 export declare class Main extends React.Component<MainProps, MainState> {
     constructor(props: any);
+    componentWillReceiveProps(): void;
     toggleMenu(): void;
     selectUrn(urnId: any): void;
     showUser(): void;

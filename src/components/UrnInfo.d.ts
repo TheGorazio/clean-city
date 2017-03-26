@@ -5,13 +5,12 @@ export interface UrnInfoState {
     extended: boolean;
 }
 export interface UrnInfoProps {
-    urn: Urn;
+    urn?: Urn;
 }
 export default class UrnInfo extends React.Component<UrnInfoProps, UrnInfoState> {
     state: {
         extended: boolean;
     };
     render(): JSX.Element;
-    componentDidMount(): void;
     extend(): void;
 }

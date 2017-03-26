@@ -7,5 +7,6 @@ declare const urns: {
         longitude: number;
         address: string;
     };
+    priority: number;
 }[];
 export default urns;
