@@ -14698,7 +14698,7 @@ var _objectAssign2 = _interopRequireDefault(_objectAssign);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-var IS_NODE = typeof document === 'undefined' || process && __webpack_require__.i({"NODE_ENV":'undefined'}) && 'undefined' === 'test';
+var IS_NODE = typeof document === 'undefined' || process && __webpack_require__.i({"NODE_ENV":'prod'}) && 'prod' === 'test';
 var _rawCookie = {};
 var _res = undefined;
 
@@ -27121,7 +27121,7 @@ var warning = __webpack_require__(2);
 
 var ReactComponentTreeHook;
 
-if (typeof process !== 'undefined' && __webpack_require__.i({"NODE_ENV":'undefined'}) && 'undefined' === 'test') {
+if (typeof process !== 'undefined' && __webpack_require__.i({"NODE_ENV":'prod'}) && 'prod' === 'test') {
   // Temporary hack.
   // Inline requires don't work well with Jest:
   // https://github.com/facebook/react/issues/7240
@@ -34203,7 +34203,7 @@ var warning = __webpack_require__(2);
 
 var ReactComponentTreeHook;
 
-if (typeof process !== 'undefined' && __webpack_require__.i({"NODE_ENV":'undefined'}) && 'undefined' === 'test') {
+if (typeof process !== 'undefined' && __webpack_require__.i({"NODE_ENV":'prod'}) && 'prod' === 'test') {
   // Temporary hack.
   // Inline requires don't work well with Jest:
   // https://github.com/facebook/react/issues/7240
@@ -34442,7 +34442,7 @@ var warning = __webpack_require__(2);
 
 var ReactComponentTreeHook;
 
-if (typeof process !== 'undefined' && __webpack_require__.i({"NODE_ENV":'undefined'}) && 'undefined' === 'test') {
+if (typeof process !== 'undefined' && __webpack_require__.i({"NODE_ENV":'prod'}) && 'prod' === 'test') {
   // Temporary hack.
   // Inline requires don't work well with Jest:
   // https://github.com/facebook/react/issues/7240
@@ -38751,7 +38751,7 @@ var warning = __webpack_require__(2);
 
 var ReactComponentTreeHook;
 
-if (typeof process !== 'undefined' && __webpack_require__.i({"NODE_ENV":'undefined'}) && 'undefined' === 'test') {
+if (typeof process !== 'undefined' && __webpack_require__.i({"NODE_ENV":'prod'}) && 'prod' === 'test') {
   // Temporary hack.
   // Inline requires don't work well with Jest:
   // https://github.com/facebook/react/issues/7240
