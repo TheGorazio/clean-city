@@ -17250,7 +17250,7 @@ module.exports = getIteratorFn;
 Object.defineProperty(exports, "__esModule", { value: true });
 const React = __webpack_require__(0);
 const Loader = () => (React.createElement("div", { className: "loader" },
-    React.createElement("img", { src: "./src/assets/logo.png", alt: "logo" })));
+    React.createElement("img", { src: "/src/assets/logo.png", alt: "logo" })));
 exports.default = Loader;
 
 
