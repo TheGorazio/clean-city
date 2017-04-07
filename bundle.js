@@ -39253,6 +39253,7 @@ class UrnInfo extends React.Component {
     render() {
         if (this.props.urn) {
             let history = this.props.urn.history;
+            let formatedHistory = this.formatHistory(history);
             let batteryData = [
                 {
                     name: 'used',
@@ -39291,7 +39292,7 @@ class UrnInfo extends React.Component {
                     " info"),
                 this.state.extended ?
                     React.createElement("div", { className: "chart", id: "chart" },
-                        React.createElement(react_d3_1.LineChart, { legend: false, data: this.formatHistory(history), width: 280, height: 230, viewBoxObject: {
+                        React.createElement(react_d3_1.LineChart, { legend: false, data: [{ values: formatedHistory, strokeWidth: 3 }], width: 280, height: 230, viewBoxObject: {
                                 x: 0,
                                 y: 0,
                                 width: 400,
@@ -39316,11 +39317,11 @@ class UrnInfo extends React.Component {
         let weekData = [];
         let tempDay = 0;
         for (let i = 0; i < week.length; i++) {
-            if ((i + 1) % 4 === 0) {
-                weekData.concat([tempDay / 4]);
+            tempDay += week[i].fill;
+            if (i % 4 === 0 && i !== 0) {
+                weekData.push(tempDay / 4);
                 tempDay = 0;
             }
-            tempDay += week[i].fill;
         }
         return weekData.map((day, index) => ({ x: index, y: day }));
     }
