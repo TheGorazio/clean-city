@@ -12,5 +12,9 @@ export default class UrnInfo extends React.Component<UrnInfoProps, UrnInfoState>
         extended: boolean;
     };
     render(): JSX.Element;
-    extend(): void;
+    private extend();
+    formatHistory(history: any): {
+        x: number;
+        y: number;
+    }[];
 }

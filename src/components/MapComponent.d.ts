@@ -9,7 +9,6 @@ export interface MapDirection {
 export interface MapProps {
     urns: Array<Urn>;
     selectUrn: Function;
-    createPath: Function;
     pathToUrn?: number;
 }
 export interface MapState {
@@ -20,6 +19,6 @@ export default class MapComponent extends React.Component<MapProps, MapState> {
     constructor();
     render(): JSX.Element;
     componentDidMount(): void;
-    createPath(to: google.maps.LatLng): void;
+    createPath(to: google.maps.LatLng, map: any): void;
     markerClick(markerId: number): void;
 }

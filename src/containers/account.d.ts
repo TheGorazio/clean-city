@@ -1,9 +1,9 @@
 /// <reference types="react" />
 import * as React from 'react';
-import { Urn } from '../types/Urn';
 import { User } from '../types/User';
 export interface AccountState {
-    urns: Array<Urn>;
+    urns: any;
+    user: User;
     redirect: boolean;
 }
 export interface AccountProps {
@@ -11,8 +11,7 @@ export interface AccountProps {
     selectUrn: Function;
 }
 export default class Account extends React.Component<AccountProps, AccountState> {
-    constructor();
-    sortThese(a: any, b: any): 1 | -1;
+    constructor(props: any);
     selectUrn(id: any): void;
     render(): JSX.Element;
 }

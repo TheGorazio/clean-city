@@ -1,6 +1,5 @@
 /// <reference types="react" />
 import * as React from 'react';
-import '../styles/main.sass';
 import { Urn } from '../types/Urn';
 import { User } from '../types/User';
 import { MessageType } from '../types/MessageType';
@@ -26,7 +25,6 @@ export declare class Main extends React.Component<MainProps, MainState> {
     toggleMenu(): void;
     selectUrn(urnId: any): void;
     showUser(): void;
-    createPath(): void;
     componentWillMount(): void;
     logout(): void;
     showMessages(): void;
